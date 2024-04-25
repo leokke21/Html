@@ -1,0 +1,393 @@
+*{
+    color: var(--Text);
+    /* border: 1px solid red; */
+}
+:root{
+    --back:#161616;
+    --Text: #FFFFFF ;
+    --back2: #5a5a5a;
+    /* --H1: #26E05A;
+    --Additive: #FFEC86;
+    --block2:#7EDD6F; */
+}
+h1{
+    font-family: in;
+}
+body{
+    background-color: var(--back);
+}
+/* хедер */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.nav-1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.nav-1 a{
+    color: var(--Text);
+    text-decoration: none;
+    height: 40px;
+}
+.nav-1 img{
+    width: 100px;
+    height: 40px;
+}
+.nav-2{
+    display: flex;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    gap: 10px;
+}
+.nav-2 .elem{
+ display: flex; 
+ gap: 10px;
+ width: 30%;
+ color: var(--Text);
+}
+.nav-2 img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* основа */
+main{
+    width: 85%;
+    margin: auto;
+}
+.poster{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 800px;
+    background-image: url(../Img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    background-position: 50% 50% ;
+    padding: 60px;
+    border-radius: 25px;
+}
+.film_info{
+    display: flex;
+    gap: 8px;
+}
+.film_info h6{
+    color: var(--back2);
+    margin: 5px;
+    /* font-size: 10pt; */
+}
+.film_info p{
+    margin: 5px;
+    
+}
+.text{
+    width: 400px;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+}
+button{
+    background: rgb(22,26,47);
+    background: linear-gradient(90deg, rgba(22,26,47,1) 28%, rgba(35,56,60,1) 100%);
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px;
+}
+.Active{
+    background: rgb(43,70,204);
+    background: linear-gradient(90deg, rgba(43,70,204,1) 3%, rgba(16,182,215,1) 100%);
+    border: 0px;
+    border-radius: 5px;
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* остальное */
+/*Рекомендации*/
+.recommendation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cards {
+    font-family: Golos Text ;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+.cards p {
+    color: gray;
+}
+
+
+.space {
+    margin-top: 50px;
+    font-family: Open Sans;
+    display: flex;
+    align-items: center;
+    background: url("../img/6.jpg") no-repeat;
+    height: 500px;
+    background-size: 100% 100%;
+}
+.space-block {
+    margin-left: 80px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.open-week-h3-gradient {
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    background: linear-gradient(90deg, #ff532f, #f1921b);
+    width: fit-content;
+
+}
+.big-h1 {
+    font-size: 60px;
+    font-family: Head;
+    margin-bottom: 10px;
+}
+.margin-100 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.open-week-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.description {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.description ul {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+    gap: 20px;
+    font-family: Golos Text ;
+    font-weight: bold;
+}
+.description li {
+    color: gray;
+}
+.description-info {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.description p {
+    font-family: Nautilus Pompilius;
+    font-size: 20px;
+}
+.selected {
+    color: white !important;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #6eaffc;
+}
+.description-img img {
+    width: 100%;
+    height: 100%;
+}
+.description-img {
+    height: min-content;
+    display: grid;
+    gap: 25px;
+    grid-auto-rows: 170px;
+    grid-template-columns: 300px 300px;
+}
+
+
+
+.live-tv-main {
+    padding: 100px 0;
+    background-color: #1f1f1f;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.live-tv {
+    display: flex;
+    gap: 50px;
+    max-width: 1250px;
+}
+.live-tv img{
+    width: 49%;
+    object-fit: contain;
+}
+.live-tv-text h1 {
+    font-weight: 100;
+    font-size: 40px;
+}
+.gradient h1 {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(43,70,204,1) 3%, rgba(16,182,215,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.live-tv p, h6 {
+    font-family: Golos Text ;
+}
+.live-tv  h6 {
+    font-weight: 200;
+}
+.live-tv-views {
+    display: grid;
+grid-row-gap: 10px;
+    grid-auto-rows: min-content;
+    grid-template-columns: 40% 40%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex img{
+
+}
+.live-tv-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.subscription-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.subscription {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.price-cards {
+    display: grid;
+
+    gap: 25px;
+    grid-auto-rows: 200px;
+    grid-template-columns: 270px 270px;
+}
+.price-card {
+    background: linear-gradient(90deg, #121d31, #212b37);
+    display: flex;
+    padding: 15px;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+.price-card h3 {
+    font-size: 40px;
+    color: #6fb1fc;
+
+}
+.subscriptions-radio {
+    display: flex;
+    gap: 10px;
+}
+.subscription label {
+    font-family: Golos Text ;
+}
+
+.subscriptions-checkbox {
+    display: flex;
+    gap: 5px;
+}
+.subscription-btn {
+    padding: 20px 15px;
+    font-size: 15px;
+    width: fit-content;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #0853d8, #74acee);
+}
+.subscriptions-blocks {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.subscriptions-blocks input {
+    width: 300px;
+    color: white;
+    padding: 5px;
+    height: 40px;
+    background-color: rgba(35, 35, 35, 0);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* Подвал */
+footer {
+
+    background-color: #1f1f1f;
+    padding: 30px 0;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.footer {
+    gap: 15px;
+    flex-wrap: wrap;
+    font-family: Golos Text ;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1250px;
+    width: 80%;
+}
+.footer-left,.footer-right {
+    display: flex;
+
+    gap: 10px;
+}
+.footer-left {
+    flex-wrap: wrap;
+}
+.checkbox {
+    background-color: red;
+    border: 1px solid white;
+}
+h3{
+    margin: 10px;
+}
+.font{
+    font-family: head;
+}
+
+/* шрифт */
+@font-face {
+    font-family: head;
+    src: url(../fonts/Intro.otf);
+}
